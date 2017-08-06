@@ -1,0 +1,23 @@
+<div class="page-header">
+        <h1>News Bulletin</h1>
+
+</div>
+<div ng-repeat="post in posts">
+        <span class="glyphicon glyphicon-thumbs-up"
+              ng-click="incrementUpvotes(post)"></span>
+    {{post.upvotes}}
+    <span style="font-size:20px; margin-left:10px;">
+        <span >
+        {{post.title}}
+        </span>
+        <span>
+        <a  class="btn btn-primary" href="#/posts/{{$index}}">Comments</a>
+        </span>
+        </span>
+</div>
+
+
+
+
+
+
