@@ -1,0 +1,21 @@
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="194087042758-u1mcsm6h6h4ttvlij37g8a5aigap04ki.apps.googleusercontent.com">
+
+<script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); }
+</script>
+
+
+<h2 class="section-heading">We've got what you need!</h2>
+<hr class="light">
+<div class="g-signin2" data-onsuccess="onSignIn" ></div>
+<p class="text-faded">Sign in with your google account to begin exploring the world of NITK and the every day tales of its population. Chronicle your own  experiences of the events that happen in campus.</p>
+<a class="page-scroll btn btn-default btn-xl sr-button" href="#/news">Get Started!</a>
+
+
+
